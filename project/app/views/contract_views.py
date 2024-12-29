@@ -572,6 +572,8 @@ async def get_tasks_for_user(
                 # Add task details to the response
                 tasks_user.append(
                     schemas.GetTasksUser(
+                        task_id=task.task_id,
+                        contract_id=contract.contract_id,
                         contract_name=contract.name,
                         task_name=task.task_name,
                         type=task.type,

@@ -212,6 +212,8 @@ class GetCtaTResponseOwn(BaseModel):
         from_attributes = True
 
 class GetTasksUser(BaseModel):
+    task_id: int
+    contract_id: int
     contract_name: str
     task_name: str
     type: TaskType
